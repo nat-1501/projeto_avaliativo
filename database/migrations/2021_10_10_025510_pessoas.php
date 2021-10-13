@@ -13,7 +13,7 @@ class CreateTablePessoas extends Migration
      */
     public function up()
     {
-        Schema::create('table_pessoas', function (Blueprint $table) {
+        Schema::create('pessoas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
 
@@ -28,6 +28,6 @@ class CreateTablePessoas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_pessoas');
+        Schema::dropIfExists('pessoas');
     }
 }
