@@ -14,7 +14,7 @@ class ForeingkeyPessoasCargos extends Migration
     public function up()
     {
         Schema::table('pessoas', function (Blueprint $table) {
-            //
+            $table->foreignId('cargos_id')->constrained()->onDelete('cascade');
         });
     }
 
@@ -26,7 +26,7 @@ class ForeingkeyPessoasCargos extends Migration
     public function down()
     {
         Schema::table('pessoas', function (Blueprint $table) {
-            //
+            $table->dropForeign(['category_id']);
         });
     }
 }
