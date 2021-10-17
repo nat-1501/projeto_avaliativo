@@ -16,6 +16,8 @@ class CreateTablePessoas extends Migration
         Schema::create('pessoas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+                     
+            $table->foreignId('cargos_id')->constrained()->onDelete('cascade')
 
             $table->timestamps();
         });
