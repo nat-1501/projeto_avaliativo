@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Cargos extends Model
 {
     use HasFactory;
+
+    public function pessoas(){
+
+        return $this->belongsTo(Pessoas::class);
+
+        
+    }
 }
