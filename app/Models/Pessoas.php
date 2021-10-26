@@ -16,5 +16,11 @@ class Pessoas extends Model
         return $this->hasOne(Cargos::class);
 
     }
+
+    public function senioridade() {
+      
+        
+        return $this->hasOne(senioridade::class);
+    } 
 }
 
