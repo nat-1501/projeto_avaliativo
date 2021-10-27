@@ -17,6 +17,9 @@ class CategoriaSkills extends Migration
             $table->id();
             $table->string('descricao');
             $table->timestamps();
+
+            table->foreignId('skils_id')->constrained('skils')->onDelete('cascate');
+            
         });
     }
 

@@ -18,7 +18,8 @@ class Skills extends Migration
             $table->string('descricao');
             $table->timestamps();
 
-            $table->foreignId('tipo_skils_id')->constrained()->onDelete('cascade')
+            $table->foreignId('tipo_skils_id')->constrained()->onDelete('cascade');
+        
         });
     }
 
