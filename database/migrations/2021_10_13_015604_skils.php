@@ -13,10 +13,12 @@ class Skills extends Migration
      */
     public function up()
     {
-        Schema::create('skills', function (Blueprint $table) {
+        Schema::create('skils', function (Blueprint $table) {
             $table->id();
             $table->string('descricao');
             $table->timestamps();
+
+            $table->foreignId('tipo_skils_id')->constrained()->onDelete('cascade')
         });
     }
 
@@ -27,6 +29,6 @@ class Skills extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('skills');
+        Schema::dropIfExists('skils');
     }
 }

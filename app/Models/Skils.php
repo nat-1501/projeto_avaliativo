@@ -11,13 +11,13 @@ class Pessoas extends Model
 
     protected $table = "skils"
 
-    public function tipo_skil() {
+    public function tipo_skils() {
 
-        return $this->hasOne(Cargos::class);
+        return $this->hasOne(tipo_skils::class);
 
     }
 
-    public function senioridade() {
+    public function categoria_skils() {
       
         
         return $this->hasOne(senioridade::class);

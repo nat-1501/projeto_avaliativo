@@ -13,10 +13,13 @@ class TipoSkills extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_skills', function (Blueprint $table) {
+        Schema::create('tipo_skils', function (Blueprint $table) {
             $table->id();
             $table->string('descricao');
             $table->timestamps();
+
+            table->foreignId('skils_id')->constrained('skils')->onDelete('cascate');
+
         });
     }
 
@@ -27,6 +30,6 @@ class TipoSkills extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_skills');
+        Schema::dropIfExists('tipo_skils');
     }
 }

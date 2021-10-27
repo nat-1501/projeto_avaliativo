@@ -18,7 +18,7 @@ class CreateTableCargos extends Migration
             $table->string('descricao');
             $table->timestamps();
 
-            $table->foreignId('pessoas_id')->constrained('pessoas')->onDelete('cascate');
+            table->foreignId('pessoas_id')->constrained('pessoas')->onDelete('cascate');
         });
     }
 
