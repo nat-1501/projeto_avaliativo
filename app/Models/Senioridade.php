@@ -12,7 +12,6 @@ class Senioridade extends Model
     public function senioridade(){
 
         return $this->belongsTo(Pessoas::class);
-
         
     }
 }
