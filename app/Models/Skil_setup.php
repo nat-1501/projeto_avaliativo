@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Skils extends Model
+class Pessoas extends Model
 {
     use HasFactory;
 
-    protected $table = "skils"
+    protected $table = "skil_setup"
 
     public function tipo_skils() {
 
