@@ -7,12 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria_skils extends Model
 {
-    use HasFactory;
-
-    public function skils(){
-
-        return $this->belongsTo(Skils::class);
-
-        
-    }
+    
 }
