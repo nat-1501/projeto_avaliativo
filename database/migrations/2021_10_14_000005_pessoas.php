@@ -18,6 +18,7 @@ class Pessoas extends Migration
             $table->string('nome');
                      
             $table->foreignId('cargos_id')->constrained()->onDelete('cascade');
+            $table->foreignId('senioridade_id')->constrained()->onDelete('cascade');
 
             $table->timestamps();
         });

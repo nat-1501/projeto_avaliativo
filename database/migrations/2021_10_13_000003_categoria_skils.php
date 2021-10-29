@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CategoriaSkills extends Migration
+class CategoriaSkils extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CategoriaSkills extends Migration
      */
     public function up()
     {
-        Schema::create('categoria_skills', function (Blueprint $table) {
+        Schema::create('categoria_skils', function (Blueprint $table) {
             $table->id();
             $table->string('descricao');
             $table->timestamps();
 
-            table->foreignId('skils_id')->constrained('skils')->onDelete('cascate');
+    
             
         });
     }
@@ -30,6 +30,6 @@ class CategoriaSkills extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categoria_skills');
+        Schema::dropIfExists('categoria_skils');
     }
 }
