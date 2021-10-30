@@ -20,6 +20,7 @@ class Skills extends Migration
 
             $table->foreignId('tipo_skils_id')->constrained()->onDelete('cascade');
             $table->foreignId('categoria_skils_id')->constrained()->onDelete('cascade');
+            $table->foreignId('skil_id')->constrained()->onDelete('cascade');
         
         });
     }
