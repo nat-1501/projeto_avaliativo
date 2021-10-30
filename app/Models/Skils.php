@@ -22,4 +22,10 @@ class Skils extends Model
         
         return $this->hasOne(categoria_skils::class);
     } 
+
+    public function skil_setup() {
+      
+        
+        return $this->hasMany(skil_setup::class);
+    } 
 }
