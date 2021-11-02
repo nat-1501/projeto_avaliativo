@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TipoSkills extends Migration
+class TipoSkils extends Migration
 {
     /**
      * Run the migrations.
@@ -18,7 +18,6 @@ class TipoSkills extends Migration
             $table->string('descricao');
             $table->timestamps();
 
-            table->foreignId('skils_id')->constrained('skils')->onDelete('cascate');
 
         });
     }

@@ -21,7 +21,8 @@ class Skils extends Model
       
         
         return $this->hasOne(categoria_skils::class);
-    } 
+
+    }    
 
     public function skil_setup() {
       

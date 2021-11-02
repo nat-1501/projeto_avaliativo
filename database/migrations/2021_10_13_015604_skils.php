@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Skills extends Migration
+class Skils extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,6 @@ class Skills extends Migration
 
             $table->foreignId('tipo_skils_id')->constrained()->onDelete('cascade');
             $table->foreignId('categoria_skils_id')->constrained()->onDelete('cascade');
-            $table->foreignId('skil_id')->constrained()->onDelete('cascade');
         
         });
     }
